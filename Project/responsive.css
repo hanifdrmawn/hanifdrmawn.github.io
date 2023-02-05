@@ -1,0 +1,142 @@
+@media screen and (max-width: 1024px) {
+    .nav-logo {
+        display: none;
+    }
+    .project-box{
+        display: block;
+        height: auto;
+        padding-bottom: 10px;
+        margin: 30px 15%;
+    }
+    .project-box img{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 994px) {
+    .project-box{
+        margin: 30px 10%;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .navbar ul{
+        display: inline;
+        margin: 0;
+    }
+    .navbar ul li a{
+        padding: 0;
+        margin: 0;
+    }
+    #menu {
+        z-index: 2;
+    }
+    #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 25px 15px 0px 20px;
+        cursor: pointer;
+    }
+    
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: #22A39F;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    
+    #bar1 {
+        transform: translateY(-4px);
+    }
+    
+    #bar3 {
+        transform: translateY(4px);
+    }
+    
+    .nav {
+        transition: 0.3s ease;
+        display: none;
+    }
+    
+    .nav li {
+        list-style: none;
+        padding: 9px 0;
+    }
+    
+    .nav li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .nav li a:hover {
+        font-weight: bold;
+    }
+    
+    .menu-bg, #menu {
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+    
+    .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 30px 20px 40px 0;
+        background: radial-gradient(circle, #22A39F, #22A39F);
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+    
+    .change {
+        display: block;
+    }
+
+    .change .bar {
+        background-color: white;
+    }
+    
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+    
+    .change #bar2 {
+        opacity: 0;
+    }
+    
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+    
+    .change-bg {
+        width: 470px;
+        height: 460px;
+        transform: translate(60%,-30%);
+    }
+}
+@media screen and (max-width: 750px) {
+    .project-box{
+        margin: 30px 5%;
+    }
+    .project-box img{
+        width: 93%;
+    }
+}
+@media screen and (max-width: 530px) {
+    .footer-responsive{
+        display: none;
+    }
+}
+@media screen and (max-width: 428px) {
+    .project-box{
+        margin: 20px 2%;
+    }
+    .project-box img{
+        width: 90%;
+    }
+    .footer-sosmed a{
+        display: none;
+    }
+}

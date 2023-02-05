@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins&display=swap');
+
+* {
+    padding : 0;
+    margin : 0;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow: overlay;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #22A39F; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #17706d; 
+}
+a{
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    transition: 0.3s;
+    justify-content: space-between;
+    background: #1F1F1F;
+}
+.nav-shadow{
+    box-shadow: 0px 4px 4px #22A39F;
+    transition: 0.5s ease-out;
+
+}
+.navbar .logo{
+    margin: 20px 35px;
+}
+.navbar .logo a{
+    font-weight: bold;
+    color: #F8F7F9;
+    font-size: 18px;
+}
+.navbar .logo span{
+    color: #22A39F;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.navbar ul li{
+    font-size: 15px;
+    padding: 5px 5px;
+    margin: 0 35px;
+    color: #F8F7F9;
+}
+.navbar ul li a{
+    color: #F8F7F9;
+}
+.navbar ul li a:hover {
+    color: #22A39F;
+    transition: 0.75s;
+}
+
+/* Project */
+
+.project{
+    background: #1F1F1F;
+    padding-top: 70px;
+    font-family: 'Poppins';
+    padding-bottom: 50px;
+    position: relative;
+}
+.project h1{
+    color: #F8F7F9;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px #22A39F;
+    margin-bottom: 40px;
+}
+.project-box{
+    border-radius: 13px;
+    border: 2px solid #22A39F;
+    margin: 0 20%;
+    align-items: center;
+    font-family: 'Inter';
+    height: 300px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.project-box-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px;
+}
+.project-box img{
+    width: 45%;
+    height:fit-content;
+    border-radius: 13px;
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.8);
+}
+.project-box-detail h2{
+    color: #F8F7F9;
+    font-size: 25px;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.8);
+}
+.project-box-detail p{
+    color: #F8F7F9;
+    font-size: 15px;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.045em;
+    margin: 10px 0 0 auto;
+}
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn span{
+    color: #F2F2F2;
+    font-size: 18px;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+.btn-mini{
+    display: none;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(3, 3, 3);
+    width: 100%;
+    height: 65px;
+    box-shadow: 0 -3px 3px #22A39F;
+    display: flex;
+    justify-content: space-between;
+    color: #F2F2F2;
+}
+footer p{
+    margin: 20px 25px;
+    font-size: 15px;
+}
+footer .footer-sosmed{
+    display: flex;
+    margin: 15px 40px;
+    font-size: 28px;
+    gap: 28px;
+}
+footer .footer-sosmed i{
+    color: #F8F7F9;
+}
+footer .footer-sosmed i:hover {
+    transition: 0.5s;
+    text-shadow:    0 0 3px #22A39F,
+                    0 0 6px #22A39F,
+                    0 0 9px #22A39F,
+                    0 0 12px #22A39F;
+}
