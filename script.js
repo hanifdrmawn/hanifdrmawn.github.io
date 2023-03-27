@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Under Construction....';
+var txt = 'Under Construction...';
 
 typeWriter();
 function typeWriter() {
