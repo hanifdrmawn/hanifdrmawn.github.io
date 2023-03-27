@@ -1,83 +1,27 @@
-let prevScrollpos = window.pageYOffset;
-let navbar = document.getElementById("navbar");
-
-window.onscroll = function () { 
-  if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20) {
-      navbar.classList.add("nav-shadow");
-  } 
-  else {
-      navbar.classList.remove("nav-shadow");
-  }
-};
-
-function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
-  }
-
-
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("project-box");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  const mediaQuery = window.matchMedia('(max-width: 1024px)')
-  if (mediaQuery.matches) {
-    slides[slideIndex-1].style.display = "block"; 
-  }
-  else{
-  slides[slideIndex-1].style.display = "flex";  
-  }
-}
-time();
-function time() {
-  setTimeout(time, 5000);
-  plusSlides(1);
-}
-
-function cv_alert() {
-  alert("Mohon maaf, CV belum tersedia");
-}
-function project_alert() {
-  alert("Mohon Maaf, Project Tidak di Deploy.");
-}
-
-// Type Writer
-
 var i = 0;
-var txt = "HI, I'M HANIF";
+var txt = 'Coming Soon...';
 
 typeWriter();
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("main-text-name").innerHTML += txt.charAt(i);
+    document.getElementById("text").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, 70);
+    setTimeout(typeWriter, 130);
   }
   else if (i==txt.length){
-    setTimeout(typeClean, 2000);
+    setTimeout(typeClean, 500);
     i=0;
+    if(txt=='Coming Soon...') {
+      txt= 'Nungguin Yaa...';
+    }
+    else if(txt=='Nungguin Yaa...') {
+      txt = 'Coming Soon...';
+    }
   }
 }
 function typeClean() {
-  document.getElementById("main-text-name").innerHTML = "";
-  loop();
+  document.getElementById("text").innerHTML = "";
+  setTimeout(loop, 500);
 }
 function loop(){
   typeWriter();
