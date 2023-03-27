@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Coming Soon...';
+var txt = 'Under Construction....';
 
 typeWriter();
 function typeWriter() {
@@ -11,11 +11,11 @@ function typeWriter() {
   else if (i==txt.length){
     setTimeout(typeClean, 500);
     i=0;
-    if(txt=='Coming Soon...') {
+    if(txt=='Under Construction...') {
       txt= 'Nungguin Yaa...';
     }
     else if(txt=='Nungguin Yaa...') {
-      txt = 'Coming Soon...';
+      txt = 'Under Construction...';
     }
   }
 }
