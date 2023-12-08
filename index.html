@@ -7,11 +7,201 @@
     <title>Hanif Darmawan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
 
 </head>
 <body>
-    <h1 id="text"></h1>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href=""><p><span>Hanif</span> Darmawan</p></a>
+            </div>
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <div class="nav" id="nav">
+                    <ul>
+                        <li onclick="menuOnClick()"><a href="">Home</a></li>
+                        <li onclick="menuOnClick()"><a href="#about">About</a></li>
+                        <li onclick="menuOnClick()"><a href="#project">Project</a></li>
+                        <li onclick="menuOnClick()"><a href="#contact">Contact</a></li>
+                        <li style="cursor: default;" class="nav-logo">|</li>
+                        <li class="nav-logo"><a href="https://www.instagram.com/hanifdrmawn/" target="_blank"><i class="fa fa-instagram" style="font-size: 20px;"></i></a></li>
+                        <li class="nav-logo"><a href="https://www.linkedin.com/in/hanifdrmawn/" target="_blank"><i class="fa fa-linkedin" style="font-size: 20px;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="main-text">
+                <p class="main-text-name" id="main-text-name"></p>
+                <h1>I'M A WEB DEVELOPER</h1>
+                <p class="main-desc">An Undergraduate Informatics Engineering Student at Brawijaya University who likes to explore new things. I have taken interest in Front-End Development.</p>
+                <a href="#project" class="main-project">VIEW MY PROJECT</a>
+            </div>
+            <div class="main-img">
+                <img src="img/main.png">
+                <div class="main-img-eclipse"></div>
+            </div>
+        </div>
+    </main>
+    <div class="barrier">
+        <ul>
+            <li>Hanif</li>
+            <li class="star">*</li>
+            <li>Darmawan</li>
+            <li class="star barrier-responsive">*</li>
+            <li class="barrier-responsive">Hanif</li>
+            <li class="star barrier-responsive">*</li>
+            <li class="barrier-responsive">Darmawan</li>
+            <li class="star barrier-responsive">*</li>
+            <li class="barrier-responsive">Hanif</li>
+        </ul>
+    </div>
+    <div class="about" id="about">
+        <div class="about-text">
+            <h1><span>About</span> Hanif</h1>
+            <p>Hello, my name is Hanif Darmawan and you can call me Hanif. I am an informatics engineering student at Brawijaya University. I have taken interest in Front-End Development and also Web Developer.</p>
+            <div class="about-logo">
+                <a href="https://github.com/hanifdrmawn" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.instagram.com/hanifdrmawn/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hanifdrmawn/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="about-tech">
+                <p>Here are a few technologies I've been working:</p>
+                <ul>
+                    <li>Java</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div class="button-cv">
+                <a href="https://drive.google.com/file/d/1fYSNqkTcMEXvJPefpP1bNLJ6dZR4VXub/view?usp=share_link" target="_blank">View CV</a>
+            </div>
+        </div>
+        <div class="about-img" data-aos="flip-right">
+            <img src="img/about.svg">
+        </div>
+    </div>
+    <div class="project" id="project">
+        <h1>Project</h1>
+        <div class="project-list-box">
+            <div class="project-box fade">
+                <img src="img/jouwas.png">
+                <div class="project-box-detail">
+                    <h2 class="project-title">Jouwas</h2>
+                    <p class="project-description">is a website for travel and food recommendations, as well as restaurant reservations. I participate in the Front-end Developer on the website.</p>
+                    <a href="https://meterai07.github.io/jouwas/" class="btn" target="_blank">
+                        <svg width="277" height="62">
+                            <defs>
+                                <linearGradient id="grad1">
+                                    <stop offset="0%" stop-color="#22A39F"/>
+                                    <stop offset="100%" stop-color="#8758FF" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+                        </svg>
+                        <span>Lihat Detail</span>
+                    </a>
+                    <a href="https://meterai07.github.io/jouwas/" class="btn-mini" target="_blank">
+                        <p>Lihat Detail</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project-box fade">
+                <img src="img/fest-porto.png">
+                <div class="project-box-detail">
+                    <h2 class="project-title">Festifora Portofolio</h2>
+                    <p class="project-description">Festifora is a workshop, and the final task is creating a website portfolio with HTML and CSS.</p>
+                    <a href="https://hanifdrmawn.github.io/festifora-portofolio/" class="btn" target="_blank">
+                        <svg width="277" height="62">
+                            <defs>
+                                <linearGradient id="grad2">
+                                    <stop offset="0%" stop-color="#22A39F"/>
+                                    <stop offset="100%" stop-color="#8758FF" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad2)" width="266" height="50"></rect>
+                        </svg>
+                        <span>Lihat Detail</span>
+                    </a>
+                    <a href="https://hanifdrmawn.github.io/festifora-portofolio/" class="btn-mini" target="_blank">
+                        <p>Lihat Detail</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project-box fade">
+                <img src="img/sampah.png">
+                <div class="project-box-detail">
+                    <h2 class="project-title">Waste Bank Service</h2>
+                    <p class="project-description">is a website that provides information about landfills with the features of the nearest landfill location, garbage collection and disposal schedules, as well as information on the latest waste prices.</p>
+                    <a onclick="project_alert()" class="btn">
+                        <svg width="277" height="62">
+                            <defs>
+                                <linearGradient id="grad3">
+                                    <stop offset="0%" stop-color="#22A39F"/>
+                                    <stop offset="100%" stop-color="#8758FF" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad3)" width="266" height="50"></rect>
+                        </svg>
+                        <span>Lihat Detail</span>
+                    </a>
+                    <a onclick="project_alert()" class="btn-mini" target="_blank">
+                        <p>Lihat Detail</p>
+                    </a>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="project-button" data-aos="zoom-in-up">
+            <a href="Project/index.html">
+                <button class="button-project" type="button">
+                    VIEW MORE
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1>Contact</h1>
+            <p class="contanct-desc">Please feel free to contact me if you need any further information.</p>
+            <div class="contact-sosmed">
+                <div class="gmail">
+                    <a href="mailto:darmawanhanif.hd@gmail.com">
+                        <button class="button-gmail" type="button">
+                            <i class="fa fa-envelope"> <span style="font-family: 'Poppins'">Gmail</span></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&#169; 2023 Hanif <span class="footer-responsive">Darmawan</span></p>
+        <div class="footer-sosmed">
+            <a href="https://github.com/hanifdrmawn" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hanifdrmawn/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/hanifdrmawn/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/hanifdrmawn/" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+    </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

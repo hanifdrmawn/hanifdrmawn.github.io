@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanif Darmawan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.png">
+
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="../index.html"><p><span>Hanif</span> Darmawan</p></a>
+            </div>
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <div class="nav" id="nav">
+                    <ul>
+                        <li onclick="menuOnClick()"><a href="../index.html">Home</a></li>
+                        <li onclick="menuOnClick()"><a href="../index.html#about">About</a></li>
+                        <li onclick="menuOnClick()"><a href="../index.html#project">Project</a></li>
+                        <li onclick="menuOnClick()"><a href="../index.html#contact">Contact</a></li>
+                        <li style="cursor: default;" class="nav-logo">|</li>
+                        <li class="nav-logo"><a href="https://www.instagram.com/hanifdrmawn/" target="_blank"><i class="fa fa-instagram" style="font-size: 20px;"></i></a></li>
+                        <li class="nav-logo"><a href="https://www.linkedin.com/in/hanifdrmawn/" target="_blank"><i class="fa fa-linkedin" style="font-size: 20px;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+        </div>
+    </header>
+    <div class="project" id="project">
+        <h1>Project</h1>
+        <div class="project-list-box">
+            <div class="project-box" data-aos="fade-up-right">
+                <img src="../img/jouwas.png">
+                <div class="project-box-detail">
+                    <h2 class="project-title">Jouwas</h2>
+                    <p class="project-description">is a website for travel and food recommendations, as well as restaurant reservations. I participate in the Front-end Developer on the website.</p>
+                    <a href="https://meterai07.github.io/jouwas/" class="btn" target="_blank">
+                        <svg width="277" height="62">
+                            <defs>
+                                <linearGradient id="grad1">
+                                    <stop offset="0%" stop-color="#22A39F"/>
+                                    <stop offset="100%" stop-color="#8758FF" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+                        </svg>
+                        <span>Lihat Detail</span>
+                    </a>
+                    <a href="https://meterai07.github.io/jouwas/" class="btn-mini" target="_blank">
+                        <p>Lihat Detail</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project-box" data-aos="fade-up-left">
+                <img src="../img/fest-porto.png">
+                <div class="project-box-detail">
+                    <h2 class="project-title">Festifora Portofolio</h2>
+                    <p class="project-description">Festifora is a workshop, and the final task is creating a website portfolio with HTML and CSS.</p>
+                    <a href="https://hanifdrmawn.github.io/festifora-portofolio/" class="btn" target="_blank">
+                        <svg width="277" height="62">
+                            <defs>
+                                <linearGradient id="grad2">
+                                    <stop offset="0%" stop-color="#22A39F"/>
+                                    <stop offset="100%" stop-color="#8758FF" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad2)" width="266" height="50"></rect>
+                        </svg>
+                        <span>Lihat Detail</span>
+                    </a>
+                    <a href="https://hanifdrmawn.github.io/festifora-portofolio/" class="btn-mini" target="_blank">
+                        <p>Lihat Detail</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project-box" data-aos="fade-up-right">
+                <img src="../img/sampah.png">
+                <div class="project-box-detail">
+                    <h2 class="project-title">Waste Bank Service</h2>
+                    <p class="project-description">is a website that provides information about landfills with the features of the nearest landfill location, garbage collection and disposal schedules, as well as information on the latest waste prices.</p>
+                    <a class="btn" onclick="project_alert()">
+                        <svg width="277" height="62">
+                            <defs>
+                                <linearGradient id="grad3">
+                                    <stop offset="0%" stop-color="#22A39F"/>
+                                    <stop offset="100%" stop-color="#8758FF" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad3)" width="266" height="50"></rect>
+                        </svg>
+                        <span>Lihat Detail</span>
+                    </a>
+                    <a href="https://hanifdrmawn.github.io/festifora-portofolio/" class="btn-mini" target="_blank">
+                        <p>Lihat Detail</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&#169; 2023 Hanif <span class="footer-responsive">Darmawan</span></p>
+        <div class="footer-sosmed">
+            <a href="https://github.com/hanifdrmawn" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hanifdrmawn/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/hanifdrmawn/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/hanifdrmawn/" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
