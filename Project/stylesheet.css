@@ -77,21 +77,21 @@ a{
 
 /* Project */
 
-.project{
+main .project{
     background: #1F1F1F;
     padding-top: 70px;
     font-family: 'Poppins';
     padding-bottom: 50px;
     position: relative;
 }
-.project h1{
+main .project h1{
     color: #F8F7F9;
     text-align: center;
     font-size: 50px;
     text-shadow: 2px 2px #22A39F;
     margin-bottom: 40px;
 }
-.project-box{
+main .project-box{
     border-radius: 13px;
     border: 2px solid #22A39F;
     margin: 0 20%;
@@ -101,30 +101,30 @@ a{
     display: flex;
     margin-bottom: 50px;
 }
-.project-box-detail{
+main .project-box-detail{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
     margin: 20px;
 }
-.project-box img{
+main .project-box img{
     width: 45%;
     height:fit-content;
     border-radius: 13px;
     margin: 20px;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.8);
 }
-.project-box-detail h2{
+main .project-box-detail h2{
     color: #F8F7F9;
     font-size: 25px;
     text-shadow: 0px 4px 4px rgba(0,0,0,0.8);
 }
-.project-box-detail p{
+main .project-box-detail p{
     color: #F8F7F9;
     font-size: 15px;
 }
-.btn {
+main .btn {
     position: relative;
     display: inline-block;
     width: 277px;
@@ -135,12 +135,12 @@ a{
     letter-spacing: 0.045em;
     margin: 10px 0 0 auto;
 }
-.btn svg {
+main .btn svg {
     position: absolute;
     top: 0;
     left: 0;
 }
-.btn svg rect {
+main .btn svg rect {
     stroke-width: 4;
     stroke-dasharray: 353, 0;
     stroke-dashoffset: 0;
@@ -148,17 +148,17 @@ a{
     transition: all 600ms ease;
 }
 
-.btn span{
+main .btn span{
     color: #F2F2F2;
     font-size: 18px;
 }
 
-.btn:hover svg rect {
+main .btn:hover svg rect {
     stroke-width: 4;
     stroke-dasharray: 196, 543;
     stroke-dashoffset: 437;
 }
-.btn-mini{
+main .btn-mini{
     display: none;
 }
 
