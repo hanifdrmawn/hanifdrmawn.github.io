@@ -1,5 +1,6 @@
 let prevScrollpos = window.pageYOffset;
 let navbar = document.getElementById("navbar");
+var shouldRunTime = true;
 
 window.onscroll = function () { 
   if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20) {
@@ -23,6 +24,10 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  shouldRunTime = false;
+}
+function autoPlusSlides() {
+  showSlides(slideIndex += 1);
 }
 
 function currentSlide(n) {
@@ -47,8 +52,10 @@ function showSlides(n) {
 }
 time();
 function time() {
-  setTimeout(time, 5000);
-  plusSlides(1);
+  if(shouldRunTime){
+    setTimeout(time, 5000);
+    autoPlusSlides();
+  }
 }
 
 function cv_alert() {
