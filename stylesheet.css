@@ -74,6 +74,7 @@ a{
     color: #22A39F;
     transition: 0.75s;
 }
+
 /* Body */
 
 main{
@@ -95,7 +96,7 @@ main{
     font-size: 26px;
 }
 .main h1{
-    font-size: 60px;
+    font-size: 45px;
 }
 .main .main-desc{
     color: rgba(248, 247, 249, 0.5);
