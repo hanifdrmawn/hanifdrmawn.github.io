@@ -31,6 +31,12 @@
     .project-box{
         height: 600px;
     }
+    .next {
+        right: 10%;
+    }
+    .prev{
+        left: 10%;
+    }
 }
 @media screen and (min-width: 745px) {
     .menu-bg{
@@ -140,7 +146,7 @@
 }
 @media screen and (max-width: 650px) {
     .main .main-img  img {
-        width: 60%;
+        width: 80%;
     }
     .about img{
         width: 70%;
@@ -183,14 +189,12 @@
     .main-text h1{
         font-size: 15px;
     }
-    .main .main-desc{
-        margin-bottom: 8px;
-    }
     .main-img-eclipse{
         display: none;
     }
     .main .main-desc{
         margin-bottom: 40px;
+        font-size: 12px;
     }
 }
 
