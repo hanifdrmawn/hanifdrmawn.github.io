@@ -258,7 +258,23 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        function initAOS() {
+            AOS.init();
+        }
+        function removeAOS() {
+            AOS.init({
+            disable: true
+            });
+        }
+        function handleAOSInitialization() {
+            if (window.innerWidth > 994) {
+            initAOS();
+            } else {
+            removeAOS();
+            }
+        }
+        window.onload = handleAOSInitialization;
+        window.addEventListener('resize', handleAOSInitialization);
     </script>
 </body>
 </html>
