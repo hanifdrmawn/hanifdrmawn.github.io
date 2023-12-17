@@ -2,18 +2,19 @@
     .nav-logo {
         display: none;
     }
-    .project-box{
+    main .project-box{
         display: block;
         height: auto;
         padding-bottom: 10px;
-        margin: 30px 15%;
+        margin: 40px 15%;
     }
-    .project-box img{
-        width: 95%;
+    main .project-box img{
+        width: 80%;
+        margin: 10px auto 0 auto;
     }
 }
 @media screen and (max-width: 994px) {
-    .project-box{
+    main  .project-box{
         margin: 30px 10%;
     }
 }
@@ -117,24 +118,46 @@
     }
 }
 @media screen and (max-width: 750px) {
-    .project-box{
+    main .project-box{
         margin: 30px 5%;
     }
-    .project-box img{
+    main .project-box img{
         width: 93%;
     }
 }
 @media screen and (max-width: 530px) {
+    main .btn{
+        display: none;
+    }
+    main .btn-mini{
+        display: block;
+        border: 2px solid;
+        border-image: linear-gradient(to right, darkblue, darkorchid) 2;
+        color: #F2F2F2;
+        font-size: 12px;
+        width: 50%;
+        margin: auto;
+    }
+    main .btn-mini p{
+        text-align: center;
+        padding: 5px
+    }
     .footer-responsive{
         display: none;
     }
 }
 @media screen and (max-width: 428px) {
-    .project-box{
-        margin: 20px 2%;
+    main .project-box{
+        margin: 20px 10%;
     }
-    .project-box img{
+    main .project-box-detail{
+        margin: 20px 10px;
+    }
+    main .project-box img{
         width: 90%;
+    }
+    main .project-description{
+        font-size: 12px;
     }
     .footer-sosmed a{
         display: none;
